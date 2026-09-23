@@ -1,0 +1,65 @@
+.theme-toggle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--panel);
+  color: var(--text);
+  cursor: pointer;
+  transition: transform .25s, background .25s, border-color .25s;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.04);
+  filter: saturate(1.2);
+  box-shadow: var(--hover-ring);
+}
+
+.theme-toggle:focus-visible {
+  outline: 3px solid rgba(47, 116, 255, .35);
+  outline-offset: 3px;
+}
+
+.theme-toggle.is-changing {
+  animation: theme-pop .38s ease;
+}
+
+.theme-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 17px;
+  height: 17px;
+  margin: -8.5px 0 0 -8.5px;
+  fill: currentColor;
+  transition: opacity .2s, transform .3s;
+}
+
+.theme-icon-sun {
+  opacity: 1;
+  transform: rotate(0) scale(1);
+}
+
+.theme-icon-moon {
+  opacity: 0;
+  transform: rotate(-45deg) scale(.5);
+}
+
+.theme-toggle[aria-pressed='true'] .theme-icon-sun {
+  opacity: 0;
+  transform: rotate(45deg) scale(.5);
+}
+
+.theme-toggle[aria-pressed='true'] .theme-icon-moon {
+  opacity: 1;
+  transform: rotate(0) scale(1);
+}
+
+@keyframes theme-pop {
+  50% {
+    transform: scale(1.18);
+  }
+}

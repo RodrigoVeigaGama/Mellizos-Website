@@ -1,21 +1,9 @@
+import { readStorage, writeStorage } from '../modules/storage.js';
+
 const storageKey = 'mellizos-cookie-consent';
 
-function getConsent() {
-  try {
-    return localStorage.getItem(storageKey);
-  } catch {
-    return null;
-  }
-}
-
-function saveConsent(value) {
-  try {
-    localStorage.setItem(storageKey, value);
-  } catch {}
-}
-
 export function initCookieBanner() {
-  if (getConsent()) return;
+  if (readStorage(storageKey)) return;
 
   document.body.insertAdjacentHTML('beforeend', `
     <div class="cookie-banner" role="region" aria-label="Aviso de cookies">
@@ -33,7 +21,7 @@ export function initCookieBanner() {
   requestAnimationFrame(() => banner.classList.add('is-visible'));
   banner.querySelectorAll('[data-cookie]').forEach((button) => {
     button.addEventListener('click', () => {
-      saveConsent(button.dataset.cookie);
+      writeStorage(storageKey, button.dataset.cookie);
       banner.classList.remove('is-visible');
       setTimeout(() => banner.remove(), 400);
     });
