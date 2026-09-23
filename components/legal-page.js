@@ -1,6 +1,7 @@
 import { renderNavbar } from './navbar.js';
 import { renderFooter } from './footer.js';
 import { siteConfig } from './site-config.js';
+import { initCookieBanner } from './cookie-banner.js';
 
 if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
 window.scrollTo(0, 0);
@@ -12,6 +13,7 @@ document.querySelectorAll('[data-config]').forEach((element) => {
   element.textContent = siteConfig[element.dataset.config] || '';
 });
 document.querySelectorAll('.reveal').forEach((element) => element.classList.add('is-visible'));
+initCookieBanner();
 
 document.body.dataset.theme = localStorage.getItem('mellizos-theme') || 'dark';
 const themeToggle = document.querySelector('.theme-toggle');

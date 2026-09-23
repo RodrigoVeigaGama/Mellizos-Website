@@ -8,8 +8,9 @@ export function renderNavbar() {
           <span class="brand-wordmark" aria-label="Mellizos">M <b>E</b> L L <b>I</b> Z O S</span>
         </a>
         <nav class="main-nav" aria-label="Navegação principal">
-          <a href="#servicos">Serviços</a>
-          <a href="#contato">Contato</a>
+          <a href="index.html#servicos">Serviços</a>
+          <a href="index.html#sobre">Sobre nós</a>
+          <a href="index.html#contato">Contato</a>
           <div class="nav-actions">
             <button class="theme-toggle" type="button" aria-label="Ativar tema claro" aria-pressed="false">
               <svg class="theme-icon theme-icon-sun" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6 6 6M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
@@ -22,5 +23,6 @@ export function renderNavbar() {
           </div>
         </nav>
       </div>
-    </header>`;
+    </header>
+    <div class="nav-notice">Atendemos somente via orçamento para que possamos adequar nosso site à sua realidade. Está em dúvida? Envie-nos uma mensagem. O que você tem a perder?</div>`;
 }

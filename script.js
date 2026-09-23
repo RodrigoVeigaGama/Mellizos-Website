@@ -1,6 +1,7 @@
 import { renderNavbar } from './components/navbar.js';
 import { renderFooter } from './components/footer.js';
 import { renderPrivacyModal } from './components/privacy-modal.js';
+import { initCookieBanner } from './components/cookie-banner.js';
 
 if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
 window.scrollTo(0, 0);
@@ -8,6 +9,7 @@ window.scrollTo(0, 0);
 document.querySelector('[data-component="navbar"]').innerHTML = renderNavbar();
 document.querySelector('[data-component="footer"]').innerHTML = renderFooter();
 document.querySelector('[data-component="privacy-modal"]').innerHTML = renderPrivacyModal();
+initCookieBanner();
 
 const phone = '5521997059829';
 const email = 'MellizosDeveloper@gmail.com';
