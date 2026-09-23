@@ -20,7 +20,7 @@ politica-de-privacidade.html
 termos-de-uso.html
 
 public/                         Arquivos servidos na raiz, sem processamento
-  favicon.png                   → /favicon.png
+  favicon.png                   → /favicon.png (32px; também favicon-512.png e apple-touch-icon.png)
   images/                       → /images/...
   videos/                       → /videos/...
 
