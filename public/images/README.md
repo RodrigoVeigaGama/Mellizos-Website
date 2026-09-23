@@ -1,21 +1,18 @@
 # Imagens do site
 
-Coloque as fotos do projeto nesta pasta.
-
-Exemplo de uso no HTML:
+Tudo o que está em `public/` é servido na raiz do site. Por isso, no HTML o caminho começa em `/images/`:
 
 ```html
-<img src="public/images/nome-da-foto.webp" alt="Descrição da foto">
+<img src="/images/nome-da-foto.webp" alt="Descrição da foto">
 ```
 
-Prefira os formatos `.webp` ou `.jpg` e nomes sem espaços, como `projeto-site.webp`.
+Prefira `.webp` e nomes sem espaços, como `projeto-site.webp`.
 
-Imagens usadas atualmente nas seções:
+Imagens usadas atualmente:
 
-- `site-projeto.svg` para Criação de Sites
-- `projeto-01.svg` para Projetos
-- `Reginaldo1.png` para Programação do Código
-- `Rodrigo.jpg` para Design de Sites
-- `Kyndrah.png` para o portfólio de sites criados
-
-Você pode substituir esses arquivos por fotos reais mantendo esses nomes ou atualizar os caminhos no `index.html`.
+- `MellizosLogo.webp`: logo do topo da página e do rodapé
+- `Rodrigo.webp`: seção Design e Experiência
+- `Reginaldo1.webp`: seção Desenvolvimento de Software
+- `Kyndrah.webp`: capa do vídeo do portfólio (Kyndrah)
+- `MellizosSemFundo.webp`: slide "Mais projetos em breve"
+- `Irmaos.webp`: seção Sobre nós

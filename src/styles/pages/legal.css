@@ -1,0 +1,75 @@
+/* Páginas de texto: Perguntas Frequentes, Política de Privacidade e Termos de Uso */
+.legal-page {
+  min-height: calc(100vh - 150px);
+  padding: 155px 0 100px;
+}
+
+.legal-content {
+  max-width: 850px;
+}
+
+.legal-content h1 {
+  max-width: 850px;
+  margin: 22px 0 16px;
+  font-size: clamp(46px, 7vw, 82px);
+}
+
+.legal-lead {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 17px;
+}
+
+.legal-updated {
+  margin: 0 0 58px;
+  color: var(--label);
+  font-size: 11px;
+}
+
+.legal-content section {
+  padding: 28px 0;
+  border-top: 1px solid var(--line);
+}
+
+.legal-content h2 {
+  margin-bottom: 12px;
+  font-size: 25px;
+}
+
+.legal-content p {
+  max-width: 760px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.legal-content a {
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.legal-content strong {
+  color: var(--text);
+}
+
+@media (max-width: 800px) {
+  .legal-page {
+    padding: 120px 0 70px;
+  }
+
+  .legal-content h1 {
+    font-size: 46px;
+  }
+
+  .legal-content section {
+    padding: 24px 0;
+  }
+
+  .legal-content h2 {
+    font-size: 23px;
+  }
+
+  .legal-content p {
+    font-size: 13px;
+  }
+}

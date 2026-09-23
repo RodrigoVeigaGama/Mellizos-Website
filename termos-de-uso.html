@@ -6,11 +6,11 @@
   <meta name="description" content="Termos de Uso da Mellizos Developer para contratação de serviços digitais.">
   <meta name="theme-color" content="#07080B">
   <title>Termos de Uso — Mellizos Developer</title>
-  <link rel="icon" type="image/png" href="Favicon.png">
+  <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/src/styles/main.css">
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
@@ -20,16 +20,16 @@
       <div class="eyebrow"><span>CONTRATAÇÃO</span></div>
       <h1>Termos de Uso</h1>
       <p class="legal-lead">Condições gerais para uso do site e contratação de serviços.</p>
-      <p class="legal-updated">Última atualização: <strong data-config="lastUpdated"></strong></p>
-      <section><h2>1. Serviços</h2><p>A Mellizos Developer oferece serviços digitais sob medida, incluindo criação de sites, estruturação de código, design de interfaces e, quando contratado, criação de aplicativos e projetos relacionados, conforme o escopo combinado com cada cliente.</p></section>
+      <p class="legal-updated">Última atualização: <strong>{{lastUpdated}}</strong></p>
+      <section><h2>1. Serviços</h2><p>A Mellizos Developer oferece serviços digitais sob medida, incluindo criação de sites, desenvolvimento de sistemas, aplicativos e softwares em geral, design de interfaces, integrações e projetos relacionados, conforme o escopo combinado com cada cliente.</p></section>
       <section><h2>2. Propostas, prazos e valores</h2><p>Orçamentos, prazos, entregas e valores são definidos individualmente em proposta ou contrato. Custos adicionais, como domínio, hospedagem, manutenção, licenças ou serviços de terceiros, serão informados antes da contratação ou da execução.</p></section>
       <section><h2>3. Contratações a distância</h2><p>Nas contratações realizadas fora do estabelecimento comercial, o consumidor pode exercer o direito de arrependimento no prazo de 7 dias, conforme art. 49 do Código de Defesa do Consumidor, observadas as condições legais aplicáveis.</p></section>
       <section><h2>4. Direitos autorais</h2><p>O conteúdo institucional e a identidade visual deste site pertencem à Mellizos Developer. Trabalhos de clientes somente serão exibidos no portfólio com autorização. A titularidade e as licenças dos materiais produzidos em cada projeto serão definidas na respectiva proposta ou contrato.</p></section>
       <section><h2>5. Uso do site</h2><p>O conteúdo deste site tem finalidade informativa. As informações podem ser atualizadas sem aviso para refletir mudanças nos serviços, no portfólio ou nas condições comerciais.</p></section>
-      <section><h2>6. Contato</h2><p>Dúvidas sobre estes termos podem ser encaminhadas para <a href="mailto:MellizosDeveloper@gmail.com">MellizosDeveloper@gmail.com</a> ou pelo WhatsApp <a href="https://wa.me/5521997059829" target="_blank" rel="noopener noreferrer">(21) 99705-9829</a>.</p></section>
+      <section><h2>6. Contato</h2><p>Dúvidas sobre estes termos podem ser encaminhadas para <a href="mailto:{{email}}">{{email}}</a> ou pelo WhatsApp <a href="{{whatsappUrl}}" target="_blank" rel="noopener noreferrer">{{whatsapp}}</a>.</p></section>
     </div>
   </main>
   <div data-component="footer"></div>
-  <script type="module" src="components/legal-page.js"></script>
+  <script type="module" src="/src/pages/legal.js"></script>
 </body>
 </html>

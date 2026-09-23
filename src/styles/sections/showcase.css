@@ -1,0 +1,136 @@
+.showcase {
+  padding: 120px 0 135px;
+  background: var(--band);
+  border-top: 1px solid rgba(255, 255, 255, .04);
+  border-bottom: 1px solid rgba(255, 255, 255, .04);
+}
+
+.showcase-heading {
+  margin-bottom: 78px;
+}
+
+.showcase-heading h2 {
+  max-width: 690px;
+  white-space: nowrap;
+}
+
+.showcase-list {
+  display: grid;
+  gap: 120px;
+}
+
+/* Cada linha é uma foto em tela cheia com um painel de texto por cima */
+.showcase-row {
+  position: relative;
+  min-height: 560px;
+  display: flex;
+  align-items: center;
+  padding: 60px;
+  overflow: hidden;
+}
+
+.showcase-media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  min-height: 100%;
+}
+
+.showcase-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.showcase-copy {
+  position: relative;
+  z-index: 1;
+  padding: 36px 40px;
+  background: var(--overlay-bg);
+  box-shadow: var(--overlay-shadow);
+  backdrop-filter: blur(4px);
+}
+
+.showcase-copy h3 {
+  margin-bottom: 20px;
+  color: var(--overlay-text);
+  font-size: clamp(44px, 5.2vw, 78px);
+  letter-spacing: -.02em;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, .55);
+}
+
+.showcase-copy p {
+  margin: 0 0 28px;
+  color: var(--overlay-muted);
+  font-size: 15px;
+}
+
+/* Painel à direita (Design) */
+.showcase-row-reverse .showcase-copy {
+  order: 2;
+  max-width: 540px;
+  margin-left: auto;
+  color: var(--overlay-text);
+  border-left: 3px solid var(--red);
+  border-right: 3px solid var(--blue);
+}
+
+/* Painel largo à esquerda (Desenvolvimento) */
+.showcase-row-code .showcase-copy {
+  flex: 0 0 680px;
+  width: 680px;
+  max-width: 680px;
+  border-left: 3px solid var(--red);
+}
+
+@media (max-width: 800px) {
+  .showcase {
+    padding: 78px 0 88px;
+  }
+
+  .showcase-heading {
+    margin-bottom: 48px;
+  }
+
+  .showcase-heading h2 {
+    white-space: normal;
+  }
+
+  .showcase-list {
+    gap: 74px;
+  }
+
+  .showcase-row {
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 570px;
+    padding: 24px;
+  }
+
+  .showcase-media {
+    overflow: hidden;
+  }
+
+  .showcase-copy {
+    max-width: 100%;
+    padding: 27px 22px;
+    background: var(--overlay-bg-mobile);
+  }
+
+  .showcase-copy p {
+    font-size: 14px;
+  }
+
+  .showcase-row-reverse .showcase-copy {
+    order: initial;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .showcase-row-code .showcase-copy {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+}

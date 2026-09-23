@@ -1,0 +1,73 @@
+.button {
+  min-height: 48px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0 19px;
+  border: 1px solid transparent;
+  border-radius: 11px;
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform .2s, background .2s, border-color .2s;
+}
+
+.button:hover {
+  transform: scale(1.04);
+  filter: saturate(1.2);
+  box-shadow: var(--hover-ring);
+}
+
+.button svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.button-small {
+  min-height: 42px;
+  padding: 0 16px;
+  font-size: 11px;
+}
+
+.button-whatsapp {
+  background: var(--red-dark);
+  color: #fff;
+  box-shadow: 0 9px 24px rgba(217, 34, 38, .2);
+}
+
+.button-whatsapp:hover {
+  background: var(--red);
+}
+
+.button-email {
+  background: var(--blue-dark);
+  color: #fff;
+}
+
+.button-email:hover {
+  background: var(--blue);
+}
+
+.button-email-outline {
+  border-color: var(--blue);
+  color: #85aaff;
+}
+
+.button-email-outline:hover {
+  background: rgba(47, 116, 255, .1);
+}
+
+@media (max-width: 800px) {
+  /* No mobile os botões pequenos viram só ícone */
+  .button-small {
+    width: 44px;
+    padding: 0;
+  }
+
+  .button-small span {
+    display: none;
+  }
+}
