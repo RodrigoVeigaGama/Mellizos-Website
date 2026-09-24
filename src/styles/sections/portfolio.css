@@ -178,8 +178,9 @@
     font-size: 17px;
   }
 
+  /* Setas no topo do slide para não cobrir o título do projeto */
   .portfolio-stage .carousel-button {
-    top: calc(50% - 18px);
+    top: 8px;
   }
 
   .carousel-button-prev {

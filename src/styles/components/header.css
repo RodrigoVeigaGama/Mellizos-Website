@@ -102,23 +102,51 @@
     height: 58px;
   }
 
+  /* No mobile a marca vai para a esquerda para não ficar sob os botões */
+  .brand {
+    position: static;
+    transform: none;
+  }
+
   .brand-wordmark {
-    font-size: 20px;
-    letter-spacing: .2em;
+    font-size: 18px;
+    letter-spacing: .16em;
   }
 
   .main-nav {
-    gap: 12px;
+    width: auto;
+    margin-left: auto;
+    gap: 10px;
   }
 
   .main-nav > a:not(.button) {
     display: none;
   }
 
+  .nav-actions {
+    gap: 8px;
+  }
+
+  /* A faixa rola junto com a página para não ocupar a tela o tempo todo */
   .nav-notice {
+    position: absolute;
     top: 58px;
     padding: 7px 12px;
-    font-size: 12px;
-    line-height: 1.35;
+    font-size: 11px;
+    letter-spacing: .02em;
+    line-height: 1.4;
+  }
+
+  .nav-notice::before {
+    width: 7px;
+    height: 7px;
+    margin-right: 7px;
+  }
+}
+
+@media (max-width: 350px) {
+  .brand-wordmark {
+    font-size: 15px;
+    letter-spacing: .12em;
   }
 }
