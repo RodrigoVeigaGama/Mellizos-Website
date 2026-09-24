@@ -1,0 +1,21 @@
+/* Ponto de entrada dos estilos. A ordem dos imports define a cascata. */
+@import './base/tokens.css';
+@import './base/base.css';
+
+@import './components/buttons.css';
+@import './components/header.css';
+@import './components/theme-toggle.css';
+@import './components/footer.css';
+@import './components/cookie-banner.css';
+@import './components/back-home-button.css';
+
+@import './sections/hero.css';
+@import './sections/showcase.css';
+@import './sections/portfolio.css';
+@import './sections/about.css';
+@import './sections/contact.css';
+
+@import './pages/legal.css';
+@import './pages/faq.css';
+
+@import './base/motion.css';
