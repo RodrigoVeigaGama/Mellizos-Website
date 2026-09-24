@@ -58,6 +58,16 @@
   transform: rotate(0) scale(1);
 }
 
+/* No mobile o botão vai para a esquerda do header, com a marca no centro */
+@media (max-width: 800px) {
+  .theme-toggle {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -20px;
+  }
+}
+
 @keyframes theme-pop {
   50% {
     transform: scale(1.18);

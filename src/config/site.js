@@ -5,7 +5,7 @@ export const site = {
   responsible: 'Reginaldo Gama Junior',
   cnpj: '62.529.924/0001-37',
   address: 'Rua Maria Ilda Pinto dos Santos, nº 1, lote 5/6 — Inhoaíba, Rio de Janeiro - RJ, 23040-309',
-  email: 'MellizosDeveloper@gmail.com',
+  email: 'atendimento@mellizosdeveloper.com.br',
   whatsappNumber: '5521997059829',
   whatsappDisplay: '(21) 99705-9829',
   lastUpdated: '23/09/2026'

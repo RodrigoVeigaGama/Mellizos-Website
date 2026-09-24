@@ -102,12 +102,6 @@
     height: 58px;
   }
 
-  /* No mobile a marca vai para a esquerda para não ficar sob os botões */
-  .brand {
-    position: static;
-    transform: none;
-  }
-
   .brand-wordmark {
     font-size: 18px;
     letter-spacing: .16em;
@@ -126,7 +120,6 @@
   .nav-actions {
     gap: 8px;
   }
-
   /* A faixa rola junto com a página para não ocupar a tela o tempo todo */
   .nav-notice {
     position: absolute;
